@@ -6,6 +6,14 @@
 </p>
 
 <p>
+  <strong>Category:</strong>
+<ul>
+	<%- @post.categories.each do |category| %>
+	<li><%= category.name %></li>
+	<% end %>
+</ul>
+
+<p>
   <strong>Content:</strong>
   <%= @post.content %>
 </p>
